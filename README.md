@@ -1,6 +1,6 @@
 # Docker OneDrive Sync
 
-This Docker image powered by [skilion/onedrive](https://github.com/skilion/onedrive) allows you to sync a local volume with OneDrive.
+This Docker image powered by [abraunegg/onedrive](https://github.com/abraunegg/onedrive) allows you to sync a local volume with OneDrive.
 
 ### Features:
 
@@ -23,7 +23,7 @@ docker run -it \
   -e PUID=$(id -u) -e PGID=$(id -g) \
   -v </path/to/config>:/config \
   -v </path/to/documents>:/documents \
-  oznu/onedrive
+  tnds82/onedrive
 ```
 
 Once authenticated you can stop the sync process and restart the container in non-interactive mode.
@@ -36,7 +36,7 @@ docker run \
   -e TZ=<timezone> \
   -v </path/to/config>:/config \
   -v </path/to/documents>:/documents \
-  oznu/onedrive
+  tnds82/onedrive
 ```
 
 ## Parameters
@@ -58,15 +58,15 @@ If you prefer to use [Docker Compose](https://docs.docker.com/compose/):
 version: '2'
 services:
   onedrive:
-    image: oznu/onedrive
+    image: tnds82/onedrive
     restart: always
     environment:
-      - TZ=Australia/Sydney
+      - TZ=Europe/Lisbon
       - PGID=911
       - PUID=911
     volumes:
       - ./config:/config
-      - /home/oznu:/documents
+      - /home/tnds82:/documents
 ```
 
 To authenticate with your Microsoft account for the first time run (this will start the container in interactive mode):
