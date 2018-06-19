@@ -17,7 +17,7 @@ else
     echo
     echo "Please re-start start the container in interactive mode using the -it flag:"
     echo
-    echo "docker run -it -v /local/config/path:/config -v /local/documents/path:/documents oznu/onedrive"
+    echo "docker run -it -v /local/config/path:/config -v /local/documents/path:/documents tnds82/onedrive"
     echo
     echo "Once authorized you can re-create container with interactive mode disabled."
     echo "-------------------------------------"
