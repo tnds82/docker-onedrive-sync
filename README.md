@@ -1,6 +1,6 @@
 # Docker OneDrive Sync
 
-This Docker image powered by [abraunegg/onedrive](https://github.com/abraunegg/onedrive) allows you to sync a local volume with OneDrive.
+This Docker image powered by [skilion/onedrive](https://github.com/skilion/onedrive) allows you to sync a local volume with OneDrive.
 
 ### Features:
 
